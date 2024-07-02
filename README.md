@@ -4,27 +4,31 @@ trait Introduce {
 }
 
 struct Me {
-    name: String,
-    job: String,
-    code: String,
-    skills: String,
+    name: &'static str,
+    job: Option<&'static str>,
+    code: &'static str,
+    skills: &'static str,
 }
 
 impl Introduce for Me {
     fn intro(&self) {
+        let job_str = match &self.job {
+            Some(job) => format!("{}", job),
+            None => "an otaku".to_string(),
+        };
         println!(
-            "Ciallo! I am {},{} an otaku who primarily crafts code with {}. My skills? {}",
-            self.name, self.job, self.code, self.skills
+            "Ciallo! I am {}, {} who primarily crafts code with {}. My skills? {}",
+            self.name, job_str, self.code, self.skills
         );
     }
 }
 
 fn main() {
     let me = Me {
-        name: String::from("Techaku"),
-        job: String::new(),
-        code: String::from("Rust"),
-        skills: String::from("surfing 🏄"),
+        name: "Techaku",
+        job: None,
+        code: "Rust",
+        skills: "surfing 🏄",
     };
 
     me.intro();
