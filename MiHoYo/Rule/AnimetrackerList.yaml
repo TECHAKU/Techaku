@@ -5,7 +5,7 @@
 # DOMAIN: 4
 # TOTAL: 4
 payload:
-  - DOMAIN,share.dmhy.org # http://share.dmhy.org/annonuce
-  - DOMAIN,t.acg.rip # http://t.acg.rip:6699/announce
-  - DOMAIN,t.nyaatracker.com # http://t.nyaatracker.com/announce
-  - DOMAIN,tr.bangumi.moe # http://tr.bangumi.moe:6969/announce
+  - DOMAIN,share.dmhy.org
+  - DOMAIN,t.acg.rip
+  - DOMAIN,t.nyaatracker.com
+  - DOMAIN,tr.bangumi.moe
