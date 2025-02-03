@@ -1,11 +1,9 @@
 # NAME: AnimetrackerList
 # AUTHOR: TECHAKU
 # REPO: https://github.com/TECHAKU/Techaku/tree/main/MiHoYo/Rule
-# UPDATED: 2025-02-03 19:02:57
-# DOMAIN: 4
-# TOTAL: 4
+# UPDATED: 2025-02-03 22:06:22
 payload:
-  - DOMAIN,share.dmhy.org
-  - DOMAIN,t.acg.rip
-  - DOMAIN,t.nyaatracker.com
-  - DOMAIN,tr.bangumi.moe
+  - 'share.dmhy.org' # http://share.dmhy.org/annonuce
+  - 't.acg.rip' # http://t.acg.rip:6699/announce
+  - 't.nyaatracker.com' # http://t.nyaatracker.com/announce
+  - 'tr.bangumi.moe' # http://tr.bangumi.moe:6969/announce
